@@ -1,0 +1,299 @@
+/* -----------------------------
+   Background et textes
+----------------------------- */
+body {
+  background-color: #f3f4f6; /* Light mode */
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+.dark body {
+  background-color: #111827; /* Dark mode */
+  color: #ffffff;
+}
+/* -----------------------------
+   Hero / Photo ronde
+----------------------------- */
+.hero-photo {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #22d3ee;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   Boutons premium
+----------------------------- */
+.btn-primary {
+  background-color: #22d3ee;
+  color: #111827;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #22d3ee;
+  color: #111827;
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   Cartes compétences / projets
+----------------------------- */
+.card {
+  background-color: #ffffff; /* Light mode */
+  color: #111827;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px -5px rgba(34, 211, 238, 0.4);
+}
+
+.dark .card {
+  background-color: #111827; /* Dark mode */
+  color: #ffffff;
+}
+
+/* -----------------------------
+   Sections
+----------------------------- */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #22d3ee;
+  margin-bottom: 2rem;
+}
+
+/* -----------------------------
+   Navbar & Footer
+----------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f3f4f6; /* Light mode */
+  color: #111827;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #22d3ee;
+}
+
+.dark .navbar {
+  background-color: #111827; /* Dark mode */
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #f3f4f6; /* Light mode */
+  color: #111827;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .footer {
+  background-color: #111827; /* Dark mode */
+  color: #ffffff;
+}
+
+/* -----------------------------
+   Formulaire Contact
+----------------------------- */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  background-color: #ffffff; /* Light mode */
+  color: #111827;
+  margin-bottom: 1rem;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #22d3ee;
+}
+
+.contact-button {
+  background-color: #22d3ee;
+  color: #111827;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.dark .contact-input,
+.dark .contact-textarea {
+  background-color: #1f2937; /* Dark mode */
+  color: #ffffff;
+}
+
+.dark .contact-button {
+  background-color: #22d3ee;
+  color: #111827;
+}
+
+.dark .contact-button:hover {
+  background-color: #0ea5e9;
+}
+
+/* -----------------------------
+   Responsive
+----------------------------- */
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* -----------------------------
+   Projets récents (COMPATIBLE DARK/LIGHT)
+----------------------------- */
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280; /* light */
+  margin-bottom: 3rem;
+  transition: color 0.3s;
+}
+
+.dark .section-subtitle {
+  color: #9ca3af; /* dark */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Carte projet */
+.project-box {
+  background-color: #ffffff; /* light */
+  color: #111827;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.25);
+}
+
+/* Dark mode */
+.dark .project-box {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+/* Image */
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Contenu */
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #4b5563; /* light */
+}
+
+.dark .project-content p {
+  color: #9ca3af; /* dark */
+}
+
+/* Boutons */
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
