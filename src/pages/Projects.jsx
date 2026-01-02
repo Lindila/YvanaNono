@@ -1,27 +1,29 @@
 import { useState } from "react";
-import "./projects.css";
 import { Link } from "react-router-dom";
+import "./projects.css";
 
 const projectsData = [
   {
     title: "Gestion Restaurant",
-    description: "Jeu de tir multijoueur fluide et amusant.",
-    image: "/projects/shooter.png",
-    category: "frontend",
-    projectLink: "https://example.com",
-  },
-  {
-    title: "SkillWokz",
+    image: "/projects/Capture2.PNG",
     description:
-      "Plateforme de préparation aux entretiens techniques propulsée par l’IA.",
-    image: "/projects/skillwokz.png",
-    category: "ia",
-    projectLink: "https://skillwokz-portfolio.vercel.app",
+      "Application de gestion pour restaurant avec interface moderne et fluide.",
+    category: "frontend",
+    projectLink: "https://lindila-github.vercel.app/",
   },
   {
-    title: "Clone de X",
-    description: "Clone du réseau social X avec authentification et posts.",
-    image: "/projects/xclone.png",
+    title: "Mon Portfolio",
+    image: "/projects/Capture.PNG",
+    description:
+      "Mon site portfolio déployé sur Vercel présentant mes projets et compétences.",
+    category: "frontend",
+    projectLink: "https://yvana-nono.vercel.app/",
+  },
+  {
+    title: "GestCourr",
+    image: "/projects/Capture3.PNG",
+    description:
+      "Gestion du courrier au MINRESI.",
     category: "backend",
     projectLink: "https://example.com",
   },
@@ -39,7 +41,7 @@ export default function Projects() {
     <section className="projects-section">
       <h2 className="projects-title">Mes Projets</h2>
       <p className="projects-subtitle">
-        Découvrez une sélection de mes réalisations les plus significatives
+        Une sélection de projets déployés et fonctionnels
       </p>
 
       {/* Filtres */}
@@ -59,11 +61,14 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Cartes */}
+      {/* Projets */}
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <div className="project-card fade-in" key={index}>
-            <img src={project.image} alt={project.title} />
+            {/* Aperçu automatique du site */}
+            <div className="project-preview">
+              <img src={project.image} alt={project.title} />
+            </div>
 
             <div className="project-content">
               <h3>{project.title}</h3>

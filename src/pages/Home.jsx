@@ -110,106 +110,119 @@ export default function Home() {
                <Skills />
               </>
       {/* Projets récents */}
+
+
 <section id="projects" className="section-container">
   <h2 className="section-title">Mes projets</h2>
   <p className="section-subtitle">
-    Quelques projets que j’ai réalisés récemment
+    Au fil de mon parcours, j'ai acquis des compétences solides en développement logiciel, en gestion de projets et en maintenance informatique. 
+    Mes formations m'ont permis de maîtriser les technologies modernes et de comprendre les enjeux de l'industrie, 
+    tandis que mes expériences professionnelles m'ont appris à travailler efficacement en équipe et à résoudre des problèmes concrets.
   </p>
 
   <div className="projects-grid">
-    {/* Projet 1 */}
-    <div className="project-box">
-      <img
-        src="/projects/shooter.jpg"
-        alt="Shooter Game"
-        className="project-image"
-      />
+    <div className="projects-grid">
 
-      <div className="project-content">
-        <h3>Shooter Game</h3>
-        <p>
-          Jeu de tir multijoueur fluide avec une expérience immersive et
-          dynamique.
-        </p>
+  <div className="projects-grid">
 
-        <div className="project-buttons">
-          <a
-            href="https://exemple.com"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary"
-          >
-            Voir le projet
-          </a>
-          <a href="#contact" className="btn-secondary">
-            Me contacter
-          </a>
-        </div>
-      </div>
-    </div>
+  {/* Gestion Restaurant */}
+  <div className="project-box">
+    <img
+      src="/projects/Capture2.PNG"
+      alt="Gestion Restaurant"
+      className="project-image"
+    />
 
-    {/* Projet 2 */}
-    <div className="project-box">
-      <img
-        src="/projects/skillwokz.jpg"
-        alt="SkillWokz"
-        className="project-image"
-      />
+    <div className="project-content">
+      <h3>Gestion Restaurant</h3>
+      <p>
+        Application de gestion pour restaurant avec interface moderne et fluide.
+      </p>
 
-      <div className="project-content">
-        <h3>SkillWokz</h3>
-        <p>
-          Plateforme de préparation aux entretiens techniques avec l’aide de
-          l’IA.
-        </p>
-
-        <div className="project-buttons">
-          <a
-            href="https://skillwokz-portfolio.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary"
-          >
-            Voir le projet
-          </a>
-          <a href="#contact" className="btn-secondary">
-            Me contacter
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Projet 3 */}
-    <div className="project-box">
-      <img
-        src="/projects/xclone.jpg"
-        alt="Clone de X"
-        className="project-image"
-      />
-
-      <div className="project-content">
-        <h3>Clone de X</h3>
-        <p>
-          Clone du réseau social X avec Firebase, authentification et posts.
-        </p>
-
-        <div className="project-buttons">
-          <a
-            href="https://exemple.com"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary"
-          >
-            Voir le projet
-          </a>
-          <a href="#contact" className="btn-secondary">
-            Me contacter
-          </a>
-        </div>
+      <div className="project-buttons">
+        <a
+          href="https://lindila-github.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-primary"
+        >
+          Voir le projet
+        </a>
+        <a href="#contact" className="btn-secondary">
+          Me contacter
+        </a>
       </div>
     </div>
   </div>
+
+  {/* Portfolio */}
+  <div className="project-box">
+    <img
+      src="/projects/Capture.PNG"
+      alt="Mon Portfolio"
+      className="project-image"
+    />
+
+    <div className="project-content">
+      <h3>Mon Portfolio</h3>
+      <p>
+        Portfolio personnel développé avec React et déployé sur Vercel.
+      </p>
+
+      <div className="project-buttons">
+        <a
+          href="https://yvana-nono.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-primary"
+        >
+          Voir le projet
+        </a>
+        <a href="#contact" className="btn-secondary">
+          Me contacter
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* GestCourr */}
+  <div className="project-box">
+    <img
+      src="/projects/Capture3.PNG"
+      alt="GestCourr"
+      className="project-image"
+    />
+
+    <div className="project-content">
+      <h3>GestCourr</h3>
+      <p>
+        Application de gestion du courrier au MINRESI.
+      </p>
+
+      <div className="project-buttons">
+        <a
+          href="https://example.com"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-primary"
+        >
+          Voir le projet
+        </a>
+        <a href="#contact" className="btn-secondary">
+          Me contacter
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+    </div>
 </section>
+
 <Education />
 <Experience />
 
