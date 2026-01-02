@@ -1,2 +1,2 @@
 # YvanaNono
-Une brieve description de mon parcous academique de mes experiences et de mes differente competences acquise
+Une briève description de mon parcours academique de mes experiences et de mes differentes competences acquises
