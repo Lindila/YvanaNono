@@ -74,7 +74,7 @@ export default function Home() {
             <a href="#projects" className="btn-primary mr-4">
               Voir mes projets
             </a>
-            <a href="#contact" className="btn-secondary">
+            <a href="/contact" className="btn-secondary">
               Me contacter
             </a>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
         >
           Voir le projet
         </a>
-        <a href="#contact" className="btn-secondary">
+        <a href="/contact" className="btn-secondary">
           Me contacter
         </a>
       </div>
@@ -178,7 +178,7 @@ export default function Home() {
         >
           Voir le projet
         </a>
-        <a href="#contact" className="btn-secondary">
+        <a href="/contact" className="btn-secondary">
           Me contacter
         </a>
       </div>
@@ -208,7 +208,7 @@ export default function Home() {
         >
           Voir le projet
         </a>
-        <a href="#contact" className="btn-secondary">
+        <a href="/contact" className="btn-secondary">
           Me contacter
         </a>
       </div>

@@ -18,7 +18,7 @@ export default function Experience() {
             <div className="experience-header">
               <div>
                 <h3>Développeur Full Stack</h3>
-                <span className="experience-company">Twingo SARL</span>
+                <span className="experience-company">MINRESI</span>
               </div>
               <span className="experience-badge">Stage</span>
             </div>
@@ -29,21 +29,22 @@ export default function Experience() {
             </div>
 
             <p className="experience-desc">
-              Développement d’applications web modernes avec React, Firebase et Appwrite.
+              Développement d’applications web modernes avec HTML,CSS et PHP.
             </p>
 
             <h4 className="experience-subtitle">Principales réalisations</h4>
             <ul className="experience-list">
-              <li>Optimisation des performances réduisant le temps de chargement de 40%</li>
-              <li>Création d’interfaces modernes et responsives</li>
+              <li>Etude du systeme de gestion du courrier du MINRESI</li>
+              <li>Elaboration et mise en oeuvre de La base de donnee</li>
+              <li>Programmation des interfaces de gestion </li>
             </ul>
 
             <div className="experience-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>TypeScript</span>
-              <span>Appwrite</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>PHP</span>
+              <span>Wamp server</span>
+              <span>Boostrap</span>
             </div>
           </div>
         </div>
@@ -58,19 +59,20 @@ export default function Experience() {
                 <h3>Développeur Frontend</h3>
                 <span className="experience-company">Projets personnels</span>
               </div>
-              <span className="experience-badge">Freelance</span>
+              <span className="experience-badge">Frelance</span>
             </div>
 
             <div className="experience-meta">
-              <span>📅 2022 – Présent</span>
-              <span>📍 Remote</span>
+              <span>📅 2025 – Présent</span>
+              <span>📍 📅 2023 – 2024</span>
             </div>
 
             <p className="experience-desc">
-              Conception et développement d’interfaces utilisateur modernes et accessibles.
+              Conception et développement des Interfaces de Gestion des immobiliers avec geolocalisation.
             </p>
 
             <ul className="experience-list">
+              <li>Intégration de l API google MAP</li>
               <li>Intégration de maquettes Figma</li>
               <li>Gestion du mode sombre / clair</li>
             </ul>
@@ -80,6 +82,8 @@ export default function Experience() {
               <span>Tailwind</span>
               <span>CSS</span>
               <span>JavaScript</span>
+              <span>Node.js</span>
+
             </div>
           </div>
         </div>
